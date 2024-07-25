@@ -152,8 +152,8 @@ function create_welcome($page)
     			</div>
     			<div class="col-md-6 pl-md-5 py-md-5">
     				<div class="heading-section pl-md-4 pt-md-5">
-    					<span class="subheading">Welcome to Accounting</span>
-	            <h2 class="mb-4">We Are the Best Accounting Agency</h2>
+    					<span class="subheading">Welcome to Stalin Auditors</span>
+	            <h2 class="mb-4">We Are the Best Auditing and Accounting Firm</h2>
     				</div>
     				<div class="services-2 w-100 d-flex">
     					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wealth"></span></div>
