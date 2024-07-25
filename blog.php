@@ -28,8 +28,8 @@
 							<div class="row">
 								<div class="col-md-6 d-flex align-items-center">
 									<p class="mb-0 phone pl-md-2">
-										<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-										<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+										<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span>+91-94874-26222</a> 
+										<a href="#"><span class="fa fa-paper-plane mr-1"></span> stalinauditors@gmail.com</a>
 									</p>
 								</div>
 								<div class="col-md-6 d-flex justify-content-md-end">
@@ -50,7 +50,7 @@
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">Accounting</a>
+	    	<a class="navbar-brand" href="index.php">Accounting</a>
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
           <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
@@ -62,12 +62,12 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
-	          <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="services.php" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="cases.php" class="nav-link">Case Study</a></li>
+	          <li class="nav-item active"><a href="blog.php" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -78,7 +78,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
+          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-0 bread">Blog</h1>
           </div>
         </div>
@@ -90,7 +90,7 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_1.jpg');">
+              <a href="blog-single.php" class="block-20 rounded" style="background-image: url('images/image_1.jpg');">
               </a>
               <div class="text p-4">
               	<div class="meta mb-2">
@@ -104,7 +104,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_2.jpg');">
+              <a href="blog-single.php" class="block-20 rounded" style="background-image: url('images/image_2.jpg');">
               </a>
               <div class="text p-4">
               	<div class="meta mb-2">
@@ -118,7 +118,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_3.jpg');">
+              <a href="blog-single.php" class="block-20 rounded" style="background-image: url('images/image_3.jpg');">
               </a>
               <div class="text p-4">
               	<div class="meta mb-2">
@@ -133,7 +133,7 @@
 
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_3.jpg');">
+              <a href="blog-single.php" class="block-20 rounded" style="background-image: url('images/image_3.jpg');">
               </a>
               <div class="text p-4">
               	<div class="meta mb-2">
@@ -147,7 +147,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_5.jpg');">
+              <a href="blog-single.php" class="block-20 rounded" style="background-image: url('images/image_5.jpg');">
               </a>
               <div class="text p-4">
               	<div class="meta mb-2">
@@ -161,7 +161,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_6.jpg');">
+              <a href="blog-single.php" class="block-20 rounded" style="background-image: url('images/image_6.jpg');">
               </a>
               <div class="text p-4">
               	<div class="meta mb-2">
