@@ -57,7 +57,7 @@ function create_wrap($page)
 function create_nav($page)
 {
 ?>
-
+	<?php if($page=='index'){?>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.php">Stalin Auditors</a>
@@ -82,60 +82,135 @@ function create_nav($page)
 			</div>
 		</div>
 	</nav>
+	<?php }elseif($page=='service'){?>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.php">Stalin Auditors</a>
+			<form action="#" class="searchform order-sm-start order-lg-last">
+				<div class="form-group d-flex">
+					<input type="text" class="form-control pl-3" placeholder="Search">
+					<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+				</div>
+			</form>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav m-auto">
+					<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+					<li class="nav-item active"><a href="services.php" class="nav-link">Services</a></li>
+					<!--<li class="nav-item"><a href="cases.php" class="nav-link">Case Study</a></li>
+					<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>-->
+					<li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<?php }elseif($page=='contact'){ ?>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	<div class="container">
+		<a class="navbar-brand" href="index.php">Stalin Auditors</a>
+		<form action="#" class="searchform order-sm-start order-lg-last">
+			<div class="form-group d-flex">
+				<input type="text" class="form-control pl-3" placeholder="Search">
+				<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+			</div>
+		</form>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span> Menu
+		</button>
+		<div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav m-auto">
+				<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="services.php" class="nav-link">Services</a></li>
+				<!--<li class="nav-item"><a href="cases.php" class="nav-link">Case Study</a></li>
+				<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>-->
+				<li class="nav-item active"><a href="contact.php" class="nav-link">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<?php }else { ?>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	<div class="container">
+		<a class="navbar-brand" href="index.php">Stalin Auditors</a>
+		<form action="#" class="searchform order-sm-start order-lg-last">
+			<div class="form-group d-flex">
+				<input type="text" class="form-control pl-3" placeholder="Search">
+				<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+			</div>
+		</form>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span> Menu
+		</button>
+		<div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav m-auto">
+				<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+				<li class="nav-item active"><a href="about.php" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="services.php" class="nav-link">Services</a></li>
+				<!--<li class="nav-item"><a href="cases.php" class="nav-link">Case Study</a></li>
+				<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>-->
+				<li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<?php }
 
-<?php
 }
 function create_hero($page)
 {
 ?>
-	<div class="hero-wrap">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item" style="background-image:url(images/bg_1.jpg);">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row no-gutters slider-text align-items-center justify-content-center">
-						<div class="col-md-8 ftco-animate">
-							<div class="text w-100 text-center">
-								<h2>We Business Grow</h2>
-								<h1 class="mb-4">We Help You Businesses Innovate and Grow</h1>
-								<p><a href="conntact.php" class="btn btn-white">Connect with us</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+  <div class="hero-wrap">
+	    <div class="home-slider owl-carousel">
+	      <div class="slider-item" style="background-image:url(images/Banner-03.jpg);">
+	      	<div class="overlay"></div>
+	        <!--<div class="container">
+	          <div class="row no-gutters slider-text align-items-center justify-content-center">
+		          <div class="col-md-8 ftco-animate">
+		          	<div class="text w-100 text-center">
+		          		<h2 class="text-danger">We Business Grow</h2>
+			            <h1 class="mb-4 text-danger">We Help You Businesses Innovate and Grow</h1>
+			            <p><a href="#" class="btn btn-white">Connect with us</a></p>
+		            </div>
+		          </div>
+		        </div>
+	        </div> -->
+	      </div>
 
-			<div class="slider-item" style="background-image:url(images/bg_2.jpg);">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row no-gutters slider-text align-items-center justify-content-center">
-						<div class="col-md-8 ftco-animate">
-							<div class="text w-100 text-center">
-								<h2>We Support Business</h2>
-								<h1 class="mb-4">The Best Business Support</h1>
-								<p><a href="#" class="btn btn-white">Connect with us</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	      <div class="slider-item" style="background-image:url(images/Banner-04.jpg);">
+	      	<div class="overlay"></div>
+	        <!--<div class="container">
+	          <div class="row no-gutters slider-text align-items-center justify-content-center">
+		          <div class="col-md-8 ftco-animate">
+		          	<div class="text w-100 text-center">
+		          		<h2 class="text-danger">We Support Business</h2>
+			            <h1 class="mb-4 text-danger">The Best Business Support</h1>
+			            <p><a href="#" class="btn btn-white">Connect with us</a></p>
+		            </div>
+		          </div>
+		        </div>
+	        </div> -->
+	      </div>
 
-			<div class="slider-item" style="background-image:url(images/bg_3.jpg);">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row no-gutters slider-text align-items-center justify-content-center">
-						<div class="col-md-8 ftco-animate">
-							<div class="text w-100 text-center">
-								<h2>We Give Advice</h2>
-								<h1 class="mb-4">Expert Financial Advice</h1>
-								<p><a href="#" class="btn btn-white">Connect with us</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	      <div class="slider-item" style="background-image:url(images/Banner-05.jpg);">
+	      	<div class="overlay"></div>
+	        <!--<div class="container">
+	          <div class="row no-gutters slider-text align-items-center justify-content-center">
+		          <div class="col-md-8 ftco-animate">
+		          	<div class="text w-100 text-center">
+		          		<h2 class="text-danger">We Give Advice</h2>
+			            <h1 class="mb-4 text-danger">Expert Financial Advice</h1>
+			            <p><a href="#" class="btn btn-white">Connect with us</a></p>
+		            </div>
+		          </div>
+		        </div>
+	        </div>-->
+	      </div>
+	    </div>
+	  </div>
 
 <?php
 }
@@ -199,6 +274,7 @@ function create_services($page)
 {
 ?>
 	<section class="ftco-section bg-light ftco-no-pt">
+		<?php if($page=='index'){?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
@@ -247,6 +323,90 @@ function create_services($page)
 				</div>
 			</div>
 		</div>
+		<?php } elseif($page=='service'){?>
+			<div class="container">
+    <div class="row">
+        <!-- Income Tax Services -->
+        <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block">
+                <div class="icon d-flex mr-2">
+                    <span class="flaticon-accounting-1"></span>
+                </div>
+                <div class="media-body">
+                    <h3 class="heading">Income Tax Services</h3>
+                    <p>Comprehensive income tax services including accurate accounting, compliance with tax regulations, payroll management, and strategic financial planning to help you achieve financial stability.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GST Services -->
+        <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block">
+                <div class="icon d-flex mr-2">
+                    <span class="flaticon-tax"></span>
+                </div>
+                <div class="media-body">
+                    <h3 class="heading">GST Services</h3>
+                    <p>Expert assistance in GST registration, return filing, computation, and advisory services, ensuring your business remains compliant with the latest GST regulations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Company Services -->
+        <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block">
+                <div class="icon d-flex mr-2">
+                    <span class="flaticon-legal"></span>
+                </div>
+                <div class="media-body">
+                    <h3 class="heading">Company Services</h3>
+                    <p>Comprehensive support for company registration, corporate governance, financial reporting, and tax planning, tailored to ensure legal compliance and business growth.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Firm Services -->
+        <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block">
+                <div class="icon d-flex mr-2">
+                    <span class="flaticon-partnership"></span>
+                </div>
+                <div class="media-body">
+                    <h3 class="heading">Firm Services</h3>
+                    <p>Professional services including partnership agreement drafting, financial advisory, and audit and assurance, aimed at fostering transparency and trust within firms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Society Services -->
+        <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block">
+                <div class="icon d-flex mr-2">
+                    <span class="flaticon-society"></span>
+                </div>
+                <div class="media-body">
+                    <h3 class="heading">Society Services</h3>
+                    <p>Expertise in society registration, fund management, and compliance, ensuring societies operate legally and efficiently, with transparent financial practices.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Services -->
+        <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block">
+                <div class="icon d-flex mr-2">
+                    <span class="flaticon-trust"></span>
+                </div>
+                <div class="media-body">
+                    <h3 class="heading">Trust Services</h3>
+                    <p>Comprehensive services for trust formation, trustee guidance, and financial transparency, ensuring trusts are managed effectively and in compliance with legal requirements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<?php } ?>
 	</section>
 
 <?php

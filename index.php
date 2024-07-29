@@ -11,7 +11,7 @@ include ("functions.php")
     <?php 
 		create_wrap("index"); 
 		create_nav("index"); 
-		//create_hero("index");
+		create_hero("index");
 		create_welcome("index");
 		create_services("index");
 		create_stats("index");

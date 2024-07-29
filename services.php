@@ -10,10 +10,10 @@ include ("functions.php")
 
     <?php 
 		create_wrap("index"); 
-		create_nav("index"); 
+		create_nav("service"); 
 		//create_hero("index");
 		create_welcome("index");
-		create_services("index");
+		create_services("service");
 		create_stats("index");
 		//create_faq("index");
 		//create_blog("index");

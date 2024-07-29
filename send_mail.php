@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // SMTP settings
     $contact->smtp = array(
-        'host' => 'smtp.mayimdazzle.com', // Corrected SMTP host
+        'host' => 'smtp.tnnet.in', // Corrected SMTP host
         'username' => 'info@stalinauditors.tnnet.in',
         'password' => '1time@p!',
         'port' => '465'

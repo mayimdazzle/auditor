@@ -10,7 +10,7 @@ include ("functions.php")
 
     <?php 
 		create_wrap("index"); 
-		create_nav("index"); 
+		create_nav("about"); 
 		//create_hero("index");
 		create_welcome("index");
 		create_services("index");
