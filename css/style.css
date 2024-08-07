@@ -8370,7 +8370,7 @@ h1, h2, h3, h4, h5,
     height: 700px;
     z-index: 0; }
     .owl-carousel.home-slider .slider-item {
-      background-size: cover;
+      background-size:cover;
       background-repeat: no-repeat;
       background-position: center center;
       height: 700px;
@@ -8391,7 +8391,7 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .slider-item {
           background-position: center center !important; } }
       .owl-carousel.home-slider .slider-item .slider-text {
-        height: 700px;
+        height: 1080px;
         position: relative; }
         .owl-carousel.home-slider .slider-item .slider-text .text {
           z-index: 0;
