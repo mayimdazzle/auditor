@@ -91,10 +91,10 @@ const Footer = () => {
               &copy; {currentYear} Stalin & Co., Auditors. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="/termsofservices" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Terms of Service
               </a>
             </div>

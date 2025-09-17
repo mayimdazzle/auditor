@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Services = () => {
+const TermsOfServices = () => {
   const services = [
     {
       icon: "📊",
@@ -147,4 +147,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default TermsOfServices
