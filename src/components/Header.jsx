@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Logo from '/images/Pigeon.png' // Make sure this path is correct
 
 const Header = () => {
   const location = useLocation()
@@ -9,9 +10,13 @@ const Header = () => {
     <header className="bg-gradient-to-r from-slate-900 to-slate-800 text-white shadow-2xl sticky top-0 z-50 backdrop-blur-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className="text-2xl font-bold">
-            <Link to="/" className="hover:text-blue-400 transition-all duration-300 transform hover:scale-105">
-              <span className="text-blue-400">Stalin</span> & Co., Auditors
+          {/* Logo + Site Name */}
+          <div className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center hover:scale-105 transition-all duration-300">
+              <img src={Logo} alt="Stalin and Co Logo" className="w-10 h-10 object-cover rounded-full" />
+              <span className="ml-2 text-2xl font-bold">
+                <span className="text-blue-400">Stalin</span> & Co., Auditors
+              </span>
             </Link>
           </div>
           

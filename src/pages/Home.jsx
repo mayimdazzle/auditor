@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Hero from '../components/Hero';
 
 const Home = () => {
   const services = [
@@ -33,6 +34,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
+      <Hero />
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white py-32 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0">

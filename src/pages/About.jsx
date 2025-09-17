@@ -26,7 +26,7 @@ const About = () => {
 
   const team = [
     {
-      name: "Stalin Kumar",
+      name: "Joseph Stalin",
       position: "Managing Partner",
       description: "Over 20 years of experience in auditing and financial consulting"
     },

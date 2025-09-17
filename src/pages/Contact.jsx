@@ -24,7 +24,7 @@ const Contact = () => {
     
     try {
       // Real form submission using FormSubmit AJAX endpoint
-      const response = await fetch('https://formsubmit.co/ajax/stalinauditors@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/c3940f95c924007510b92a65964b7992', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
