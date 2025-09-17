@@ -2,7 +2,7 @@
 function create_header($page)
 {
 ?>
-	<title>Stalin Auditors</title>
+	<title>Stalin & Co., Auditors</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -60,7 +60,7 @@ function create_nav($page)
 	<?php if ($page == 'index') { ?>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container">
-				<a class="navbar-brand" href="index.php">Stalin Auditors</a>
+				<a class="navbar-brand" href="index.php">Stalin & Co., Auditors</a>
 				<form action="#" class="searchform order-sm-start order-lg-last">
 					<div class="form-group d-flex">
 						<input type="text" class="form-control pl-3" placeholder="Search">
@@ -85,7 +85,7 @@ function create_nav($page)
 	<?php } elseif ($page == 'service') { ?>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container">
-				<a class="navbar-brand" href="index.php">Stalin Auditors</a>
+				<a class="navbar-brand" href="index.php">Stalin & Co., Auditors</a>
 				<form action="#" class="searchform order-sm-start order-lg-last">
 					<div class="form-group d-flex">
 						<input type="text" class="form-control pl-3" placeholder="Search">
@@ -110,7 +110,7 @@ function create_nav($page)
 	<?php } elseif ($page == 'contact') { ?>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container">
-				<a class="navbar-brand" href="index.php">Stalin Auditors</a>
+				<a class="navbar-brand" href="index.php">Stalin & Co., Auditors</a>
 				<form action="#" class="searchform order-sm-start order-lg-last">
 					<div class="form-group d-flex">
 						<input type="text" class="form-control pl-3" placeholder="Search">
@@ -135,7 +135,7 @@ function create_nav($page)
 	<?php } else { ?>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container">
-				<a class="navbar-brand" href="index.php">Stalin Auditors</a>
+				<a class="navbar-brand" href="index.php">Stalin & Co., Auditors</a>
 				<form action="#" class="searchform order-sm-start order-lg-last">
 					<div class="form-group d-flex">
 						<input type="text" class="form-control pl-3" placeholder="Search">
@@ -226,7 +226,7 @@ function create_welcome($page)
 				</div>
 				<div class="col-md-6 pl-md-5 py-md-5">
 					<div class="heading-section pl-md-4 pt-md-5">
-						<span class="subheading">Welcome to Stalin Auditors</span>
+						<span class="subheading">Welcome to Stalin & Co., Auditors</span>
 						<h2 class="mb-4">We Are the Best Auditing and Accounting Firm.</h2>
 						<p style="justify-self: baseline">Our commitment is to provide comprehensive financial solutions to individuals, businesses, and organizations.<br />Here’s a concise overview of our services:</p>
 					</div>
