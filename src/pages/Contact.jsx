@@ -23,11 +23,12 @@ const Contact = () => {
     setIsSubmitting(true)
     
     try {
-      // Real form submission using FormSubmit (a free form backend service)
-      const response = await fetch('https://formsubmit.co/stalinauditors@gmail.com', {
+      // Real form submission using FormSubmit AJAX endpoint
+      const response = await fetch('https://formsubmit.co/ajax/stalinauditors@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify({
           name: formData.name,
@@ -36,19 +37,25 @@ const Contact = () => {
           subject: formData.subject || 'Website Contact Form',
           message: formData.message,
           _subject: `New Contact Form Submission from ${formData.name}`,
-          _cc: 'stalinauditors@gmail.com'
+          _cc: 'stalinauditors@gmail.com',
+          _captcha: 'false'
         }),
       })
 
       if (response.ok) {
-        alert('Thank you for your message. We will get back to you soon!')
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
-        })
+        const result = await response.json()
+        if (result.success) {
+          alert('Thank you for your message. We will get back to you soon!')
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            subject: '',
+            message: ''
+          })
+        } else {
+          throw new Error('Form submission failed')
+        }
       } else {
         throw new Error('Failed to send message')
       }
