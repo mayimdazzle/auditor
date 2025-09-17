@@ -22,19 +22,42 @@ const Contact = () => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData)
-      alert('Thank you for your message. We will get back to you soon!')
-      setIsSubmitting(false)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+    try {
+      // Real form submission using FormSubmit (a free form backend service)
+      const response = await fetch('https://formsubmit.co/stalinauditors@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject || 'Website Contact Form',
+          message: formData.message,
+          _subject: `New Contact Form Submission from ${formData.name}`,
+          _cc: 'stalinauditors@gmail.com'
+        }),
       })
-    }, 1000)
+
+      if (response.ok) {
+        alert('Thank you for your message. We will get back to you soon!')
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        })
+      } else {
+        throw new Error('Failed to send message')
+      }
+    } catch (error) {
+      console.error('Error sending message:', error)
+      alert('Sorry, there was an error sending your message. Please try again or contact us directly at stalinauditors@gmail.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
